@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Human Evolution</title>
+    <style>
+        :root {
+            --primary: #8B4513;  /* SaddleBrown - earthy tone */
+            --secondary: #D2B48C; /* Tan */
+            --accent: #5F9EA0;   /* CadetBlue */
+            --light: #F5F5DC;   /* Beige */
+            --dark: #2F4F4F;     /* DarkSlateGray */
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: #333;
+            background-image: url('https://images.unsplash.com/photo-1617791160536-598cf32026fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            background-color: rgba(245, 245, 220, 0.9);
+        }
+        
+        header {
+            background: linear-gradient(to right, var(--dark), var(--primary));
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            background-color: var(--primary);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-buttons a {
+            background-color: var(--secondary);
+            color: var(--dark);
+            border: none;
+            padding: 0.8rem 1.8rem;
+            margin: 0 0.8rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-decoration: none;
+        }
+        
+        .nav-buttons a:hover {
+            background-color: var(--accent);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .nav-buttons a.active {
+            background-color: var(--accent);
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        
+        .about-section {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--primary);
+        }
+        
+        .mission-vision {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .mission, .vision {
+            background-color: rgba(210, 180, 140, 0.2);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-top: 3px solid var(--accent);
+        }
+        
+        .team-section {
+            margin-top: 3rem;
+        }
+        
+        .instructor-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .instructor-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--secondary);
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .member-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .member-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--secondary);
+            margin: 0 auto 1rem;
+        }
+        
+        footer {
+            background: linear-gradient(to right, var(--dark), var(--primary));
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-buttons {
+                flex-wrap: wrap;
+            }
+            
+            .nav-buttons a {
+                margin: 0.5rem;
+                padding: 0.6rem 1.2rem;
+            }
+            
+            .instructor-img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Our Project</h1>
+        <p>Discover the team behind this educational journey through human evolution</p>
+    </header>
+    
+    <div class="nav-buttons">
+        <a href="index.html">Home</a>
+        <a href="fun.html">Fun Facts</a>
+        <a href="key.html">Key Stages</a>
+        <a href="theories.html">Theories & Debates</a>
+        <a href="about.html" class="active">About</a>
+    </div>
+    
+    <div class="container">
+        <div class="about-section">
+            <h2>Our Educational Mission</h2>
+            <p>This Human Evolution website was created as part of our Empowerment Technology class project. Our goal is to make the fascinating story of human origins accessible and engaging for everyone, combining scientific accuracy with compelling visual design.</p>
+            
+            <div class="mission-vision">
+                <div class="mission">
+                    <h3>Our Mission</h3>
+                    <p>To educate and inspire curiosity about human evolution through interactive, visually-rich content that makes complex scientific concepts understandable to all audiences.</p>
+                </div>
+                
+                <div class="vision">
+                    <h3>Our Vision</h3>
+                    <p>We envision a world where everyone understands our shared evolutionary heritage and appreciates how science helps us understand what makes us human.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="team-section">
+            <h2>Our Empowerment Technology Instructor</h2>
+            <div class="instructor-card">
+                <img src="https://scontent.fceb2-1.fna.fbcdn.net/v/t1.15752-9/487770712_1343016903610946_8939488858943941205_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGPAakuxGvM24OBa2VBBkZpRm6yKDvqtXhGbrIoO-q1eGgrG4wAGkz3S40z7Q45FnH7uK2BSiSjOxUH7rL43_te&_nc_ohc=O81v9hfxBEgQ7kNvwECVzT7&_nc_oc=AdmyJFXNyUlT74C3liglQke6CiuukLAGRxh9_rum648-Q9EfEN6u5tu0ank0VTMSRIsp2Kv3z9TgwSrhOgQvfaMc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fceb2-1.fna&oh=03_Q7cD2AGoQrsdlv8UxUEYzzU_PrNUBYj1wmRlfVRm30LIUaiATQ&oe=681AF060" alt="Rhena Mae Montes" class="instructor-img">
+                <h3>Rhena Mae Montes</h3>
+                <p><strong>Empowerment Technology Instructor</strong></p>
+                <p>Our dedicated teacher who guided us through this project, providing valuable insights on web design, content organization, and educational technology.</p>
+            </div>
+            
+            <h2>Project Team Members</h2>
+            <div class="team-members">
+                <div class="member-card">
+                    <img src="https://scontent.fceb6-2.fna.fbcdn.net/v/t1.15752-9/487875009_459130650560785_7835625041295385618_n.png?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeH4rjKeU_fgEIZOjcNATBy3m6N_Oo_W-H6bo386j9b4frdHWIHdO0gQ8nNYMFuMkWMCNyCKLFG9Jth6a3RluQvJ&_nc_ohc=3TQIKnYifaoQ7kNvwGRZ8Wa&_nc_oc=Adn2HixAYEnKDNgNnUa6mXmxwgccBppPPlAnUNpgEVq3RGw6mYVumfim_0Dvr0SKEfA&_nc_zt=23&_nc_ht=scontent.fceb6-2.fna&oh=03_Q7cD2AFhHDAmlQDNdErPdTK3a07XCGWJhvNlkenaD4fye49GHw&oe=681CAE1E" alt="Lance Marl Manto" class="member-img">
+                    <h3>Lance Marl Manto</h3>
+                  
+                </div>
+                
+                <div class="member-card">
+                    <img src="https://scontent.fceb2-1.fna.fbcdn.net/v/t1.15752-9/487752491_2513858938972884_2562737330896533163_n.png?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeF8ghQ8hZF626ZrRSSQVKjAO9RotD-LXQI71Gi0P4tdAvwM9lf1d-U2Pd-nxHc6btjLjyYfLtvHhNmp34nzjrh7&_nc_ohc=W-q3CKkenyEQ7kNvwHzVDgP&_nc_oc=Adkod4SDC0HxAKt-v7gKZixZY1cf8yx9PjBC85aagDaTC1LbtBzf2Krs3Xp8WGOnM2c&_nc_zt=23&_nc_ht=scontent.fceb2-1.fna&oh=03_Q7cD2AGTwh8d6BiI9gI0XIYfppLKF0muscKV9OhdDUNb-pnhLA&oe=681CDD3A" alt="Mechailla Ationg" class="member-img">
+                    <h3>Mechailla Ationg</h3>
+                  
+                </div>
+                
+                <div class="member-card">
+                    <img src="https://scontent.fceb2-2.fna.fbcdn.net/v/t1.15752-9/482667046_1567786553793749_1244838790535815864_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEXFb3n5YLcI5z6CmyJKB_63N83RH_xwAvc3zdEf_HAC4ILUbVEHnwIewbqKK8OKK0gIvKig3vxgutqo8d2GOjR&_nc_ohc=T2Lvy_izeKYQ7kNvwEIISVs&_nc_oc=AdlfVe_gdS6TsRcv1rFfqybWVEY14-d4hJHPK5WAwa53tbBXWUZ1c8L3CQBVwkjZQpc&_nc_zt=23&_nc_ht=scontent.fceb2-2.fna&oh=03_Q7cD2AFHP20YMzlzcTKSSQzrBo7DGu6oIArH41x-jnKldHvVZA&oe=681CD7B5" alt="Danilo Capungan" class="member-img">
+                    <h3>Danilo Capungan</h3>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Human Evolution Education Project | Designed for curious minds</p>
+    </footer>
+</body>
+</html>

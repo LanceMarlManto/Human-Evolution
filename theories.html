@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theories & Debates | Human Evolution</title>
+    <style>
+        :root {
+            --primary: #8B4513;  /* SaddleBrown - earthy tone */
+            --secondary: #D2B48C; /* Tan */
+            --accent: #5F9EA0;   /* CadetBlue */
+            --light: #F5F5DC;   /* Beige */
+            --dark: #2F4F4F;     /* DarkSlateGray */
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: #333;
+            background-image: url('https://images.unsplash.com/photo-1617791160536-598cf32026fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            background-color: rgba(245, 245, 220, 0.9);
+        }
+        
+        header {
+            background: linear-gradient(to right, var(--dark), var(--primary));
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            background-color: var(--primary);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-buttons a {
+            background-color: var(--secondary);
+            color: var(--dark);
+            border: none;
+            padding: 0.8rem 1.8rem;
+            margin: 0 0.8rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-decoration: none;
+        }
+        
+        .nav-buttons a:hover {
+            background-color: var(--accent);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .nav-buttons a.active {
+            background-color: var(--accent);
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        
+        .intro {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 3rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--primary);
+            text-align: center;
+        }
+        
+        .theory-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .theory-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .theory-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .theory-card h3 {
+            color: var(--primary);
+            margin-top: 0;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+        }
+        
+        .theory-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin: 1rem 0;
+            border: 3px solid var(--secondary);
+        }
+        
+        .pros-cons {
+            margin-top: 1rem;
+            background-color: rgba(210, 180, 140, 0.2);
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        
+        .pros-cons h4 {
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+        
+        .pros-cons ul {
+            padding-left: 1.5rem;
+        }
+        
+        .pros-cons li {
+            margin-bottom: 0.3rem;
+        }
+        
+        footer {
+            background: linear-gradient(to right, var(--dark), var(--primary));
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-buttons {
+                flex-wrap: wrap;
+            }
+            
+            .nav-buttons a {
+                margin: 0.5rem;
+                padding: 0.6rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Theories & Debates in Human Evolution</h1>
+        <p>Exploring the scientific controversies that shape our understanding</p>
+    </header>
+    
+    <div class="nav-buttons">
+        <a href="index.html">Home</a>
+        <a href="fun.html">Fun Facts</a>
+        <a href="key.html">Key Stages</a>
+        <a href="theories.html" class="active">Theories & Debates</a>
+        <a href="about.html">About</a>
+    </div>
+    
+    <div class="container">
+        <div class="intro">
+            <h2>Major Theories in Human Evolution</h2>
+            <p>Human evolution research is filled with competing theories and ongoing debates. Scientists continue to discuss when and where key developments occurred, and what factors drove our evolutionary path. Below are some of the most significant theories and controversies in paleoanthropology.</p>
+        </div>
+        
+        <div class="theory-container">
+            <!-- Theory 1 -->
+            <div class="theory-card">
+                <h3>Out of Africa Theory</h3>
+                <img src="https://scholarblogs.emory.edu/evolutionshorts/files/2014/04/photo-1-copy.jpg" alt="African landscape" class="theory-img">
+                <p>Proposes that modern humans evolved in Africa and then migrated to other continents, replacing other hominin species without interbreeding.</p>
+                
+                <div class="pros-cons">
+                    <h4>Evidence Supporting:</h4>
+                    <ul>
+                        <li>Oldest Homo sapiens fossils found in Africa (300,000 years old)</li>
+                        <li>Genetic studies show greatest diversity in African populations</li>
+                        <li>Clear archaeological progression out of Africa</li>
+                    </ul>
+                    
+                    <h4>Challenges:</h4>
+                    <ul>
+                        <li>Some evidence of earlier migrations</li>
+                        <li>Debate over extent of interbreeding with other species</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Theory 2 -->
+            <div class="theory-card">
+                <h3>Multiregional Theory</h3>
+                <img src="https://media.springernature.com/lw685/springer-static/image/prt%3A978-1-4419-0465-2%2F8/MediaObjects/978-1-4419-0465-2_8_Part_Fig1-672_HTML.jpg
+" alt="World map" class="theory-img">
+                <p>Suggests modern humans evolved simultaneously in different regions from local populations of Homo erectus, with gene flow between groups.</p>
+                
+                <div class="pros-cons">
+                    <h4>Evidence Supporting:</h4>
+                    <ul>
+                        <li>Regional continuity in some physical traits</li>
+                        <li>Ancient DNA shows some interbreeding occurred</li>
+                    </ul>
+                    
+                    <h4>Challenges:</h4>
+                    <ul>
+                        <li>Lack of transitional fossils in many regions</li>
+                        <li>Genetic evidence shows recent African origin dominates</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Theory 3 -->
+            <div class="theory-card">
+                <h3>Aquatic Ape Hypothesis</h3>
+                <img src="https://theaquaticape.org/wp-content/uploads/2011/03/human_aquatic_adaptations.jpg" alt="Ocean waves" class="theory-img">
+                <p>Proposes that human ancestors went through a semi-aquatic phase that explains features like hairlessness, subcutaneous fat, and breath control.</p>
+                
+                <div class="pros-cons">
+                    <h4>Evidence Supporting:</h4>
+                    <ul>
+                        <li>Some unique human traits seen in aquatic mammals</li>
+                        <li>High levels of omega-3 needed for brain development</li>
+                    </ul>
+                    
+                    <h4>Challenges:</h4>
+                    <ul>
+                        <li>Lack of direct fossil evidence</li>
+                        <li>Most scientists consider it a fringe theory</li>
+                        <li>Other explanations exist for these traits</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Theory 4 -->
+            <div class="theory-card">
+                <h3>Neanderthal Extinction Debate</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHaT94hNX57br2zEQp5Q3V-BUCyVrDev0i0A&s" alt="Neanderthal reconstruction" class="theory-img">
+                <p>Why did Neanderthals disappear about 40,000 years ago after thriving for hundreds of thousands of years?</p>
+                
+                <div class="pros-cons">
+                    <h4>Competing Theories:</h4>
+                    <ul>
+                        <li><strong>Climate change:</strong> Unable to adapt to rapid shifts</li>
+                        <li><strong>Competition:</strong> Outcompeted by modern humans</li>
+                        <li><strong>Absorption:</strong> Fully interbred with humans</li>
+                        <li><strong>Disease:</strong> Vulnerable to new pathogens</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Theory 5 -->
+            <div class="theory-card">
+                <h3>Recent Accelerated Evolution</h3>
+                <img src="https://ars.els-cdn.com/content/image/1-s2.0-S2666979X24003690-fx1.jpg" alt="DNA strand" class="theory-img">
+                <p>The controversial idea that human evolution has accelerated in the past 10,000 years due to agricultural lifestyles and larger populations.</p>
+                
+                <div class="pros-cons">
+                    <h4>Evidence Supporting:</h4>
+                    <ul>
+                        <li>Genes for lactose tolerance and disease resistance</li>
+                        <li>Changes in skin pigmentation</li>
+                        <li>Brain size reduction</li>
+                    </ul>
+                    
+                    <h4>Challenges:</h4>
+                    <ul>
+                        <li>Hard to distinguish from cultural evolution</li>
+                        <li>Some changes may be epigenetic rather than genetic</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Theory 6 -->
+            <div class="theory-card">
+                <h3>Bipedalism Origins</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUOFj8AJqMCGQdzy7muQmw0VtWNKsP9tSWaw&s" alt="Footprints" class="theory-img">
+                <p>Why did our ancestors start walking upright? Several competing hypotheses exist.</p>
+                
+                <div class="pros-cons">
+                    <h4>Proposed Explanations:</h4>
+                    <ul>
+                        <li><strong>Savanna theory:</strong> Better visibility in grasslands</li>
+                        <li><strong>Energy efficiency:</strong> Uses less energy than knuckle-walking</li>
+                        <li><strong>Thermoregulation:</strong> Less sun exposure standing upright</li>
+                        <li><strong>Carrying theory:</strong> Free hands for tools/food</li>
+                        <li><strong>Aquatic theory:</strong> Wading in shallow water</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Human Evolution Education Project | Designed for curious minds</p>
+    </footer>
+</body>
+</html>

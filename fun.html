@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Evolution Fun Facts</title>
+    <style>
+        :root {
+            --primary: #8B4513;  /* SaddleBrown - earthy tone */
+            --secondary: #D2B48C; /* Tan */
+            --accent: #5F9EA0;   /* CadetBlue */
+            --light: #F5F5DC;   /* Beige */
+            --dark: #2F4F4F;     /* DarkSlateGray */
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: #333;
+            background-image: url('https://images.unsplash.com/photo-1617791160536-598cf32026fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            background-color: rgba(245, 245, 220, 0.9);
+        }
+        
+        header {
+            background: linear-gradient(to right, var(--dark), var(--primary));
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            background-color: var(--primary);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-buttons button {
+            background-color: var(--secondary);
+            color: var(--dark);
+            border: none;
+            padding: 0.8rem 1.8rem;
+            margin: 0 0.8rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .nav-buttons button:hover {
+            background-color: var(--accent);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        
+        .intro {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 3rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--primary);
+            text-align: center;
+        }
+        
+        .fact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .fact-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .fact-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .fact-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--secondary);
+        }
+        
+        .fact-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .fact-number {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            background-color: var(--secondary);
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+        }
+        
+        .fact-content h3 {
+            color: var(--primary);
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        footer {
+            background: linear-gradient(to right, var(--dark), var(--primary));
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-buttons {
+                flex-wrap: wrap;
+            }
+            
+            .nav-buttons button {
+                margin: 0.5rem;
+                padding: 0.6rem 1.2rem;
+            }
+            
+            .fact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Human Evolution Fun Facts</h1>
+        <p>Surprising discoveries about our evolutionary journey</p>
+    </header>
+    
+    <div class="nav-buttons">
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='fun.html'" class="active">Fun Facts</button>
+        <button onclick="location.href='key.html'">Key Stages</button>
+        <button onclick="location.href='theories.html'">Theories & Debates</button>
+        <button onclick="location.href='about.html'">About</button>
+    </div>
+    
+    <div class="container">
+        <div class="intro">
+            <h2>Did You Know?</h2>
+            <p>Human evolution is full of fascinating twists and turns. From vestigial traits to near-extinction events, our evolutionary path has shaped who we are today. Explore these intriguing facts about our ancestors and the evolutionary processes that made us human.</p>
+        </div>
+        
+        <div class="fact-container">
+            <!-- Fact 1 -->
+            <div class="fact-card">
+                <img src="https://c.ndtvimg.com/2024-02/ug6op25g_humans-lost-tail-getty_625x300_29_February_24.jpeg?im=FaceCrop,algorithm=dnn,width=1200,height=738" alt="Human tailbone illustration" class="fact-img">
+                <div class="fact-content">
+                    <span class="fact-number">1</span>
+                    <h3>Humans Once Had a Tail</h3>
+                    <p>Early human ancestors had tails! Over time, our tailbone (coccyx) became a vestigial structure, a leftover from our tailed ancestors. The coccyx now serves as an attachment point for various muscles and ligaments.</p>
+                </div>
+            </div>
+            
+            <!-- Fact 2 -->
+            <div class="fact-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCnlnjd_wfUh-dh2DkWpOGGccNKN8LifZBAQ&s" alt="Human brain comparison" class="fact-img">
+                <div class="fact-content">
+                    <span class="fact-number">2</span>
+                    <h3>Our Brains Are Shrinking</h3>
+                    <p>Over the last 20,000 years, the average size of the human brain has decreased by about the size of a tennis ball. Some scientists think this might indicate that our brains are becoming more efficient or that social structures reduce the need for larger brains.</p>
+                </div>
+            </div>
+            
+            <!-- Fact 3 -->
+            <div class="fact-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ82_uGwmMyiWV7UiJNQuIPipXoeo31ySNfdw&s" alt="Neanderthal reconstruction" class="fact-img">
+                <div class="fact-content">
+                    <span class="fact-number">3</span>
+                    <h3>We Are Part Neanderthal</h3>
+                    <p>Non-African modern humans have about 1–2% Neanderthal DNA. This interbreeding happened tens of thousands of years ago when modern humans and Neanderthals lived alongside each other in Europe and Asia.</p>
+                </div>
+            </div>
+            
+            <!-- Fact 4 -->
+            <div class="fact-card">
+                <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F41052ce6-db26-4dd1-a8be-cd56aec9c258_2225x2286.jpeg" alt="Ancient hunting illustration" class="fact-img">
+                <div class="fact-content">
+                    <span class="fact-number">4</span>
+                    <h3>The "Running Ape" Theory</h3>
+                    <p>Humans are exceptionally good at long-distance running compared to other animals. This ability likely evolved to help our ancestors hunt prey by wearing them out through persistence hunting - chasing animals until they collapsed from exhaustion.</p>
+                </div>
+            </div>
+            
+            <!-- Fact 5 -->
+            <div class="fact-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt-tMPMjLaUhOJKNLD5RVCzWvPvLx-v9JeNQ&s" alt="Human child development" class="fact-img">
+                <div class="fact-content">
+                    <span class="fact-number">5</span>
+                    <h3>Humans Have the Longest Childhood</h3>
+                    <p>Compared to other primates, humans take a remarkably long time to grow up. This extended development period allows for complex brain growth and social learning, giving us our unique cognitive abilities.</p>
+                </div>
+            </div>
+            
+            <!-- Fact 6 -->
+            <div class="fact-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZHwrb2yx82TFgVyFMJTQ8cSrGyO36Kj-uDA&s" alt="Goosebumps on arm" class="fact-img">
+                <div class="fact-content">
+                    <span class="fact-number">6</span>
+                    <h3>Goosebumps Are a Primate Throwback</h3>
+                    <p>The tiny muscles that cause goosebumps were more useful when our ancestors had thick fur. It would puff up their fur to make them appear larger to predators and trap heat when cold - a reflex we've inherited but that serves little purpose today.</p>
+                </div>
+            </div>
+            
+            <!-- Fact 7 -->
+            <div class="fact-card">
+                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/03/31/13/tree-climbing.jpg?width=1200&height=1200&fit=crop" alt="Tree-climbing primates" class="fact-img">
+                <div class="fact-content">
+                    <span class="fact-number">7</span>
+                    <h3>Our Ancestors Were Tree-Climbers</h3>
+                    <p>The structure of our shoulders and hands still reflects our ancestors' tree-climbing abilities. These traits are particularly evident in our flexible shoulders and grip strength, which allowed for brachiation (swinging from branches).</p>
+                </div>
+            </div>
+            
+            <!-- Fact 8 -->
+            <div class="fact-card">
+                <img src="https://i.ytimg.com/vi/y8QFmEEGpn4/maxresdefault.jpg" alt="Volcano eruption" class="fact-img">
+                <div class="fact-content">
+                    <span class="fact-number">8</span>
+                    <h3>We Almost Went Extinct</h3>
+                    <p>Around 70,000 years ago, the Toba supervolcano erupted, causing a global winter. Genetic evidence suggests the human population might have dwindled to just a few thousand individuals - making us an endangered species at that time.</p>
+                </div>
+            </div>
+            
+            <!-- Fact 9 -->
+            <div class="fact-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdkl3B2kGBgLISFwd8dmgeS-wzevMQJ8Utxg&s" alt="Dental X-ray showing wisdom teeth" class="fact-img">
+                <div class="fact-content">
+                    <span class="fact-number">9</span>
+                    <h3>Wisdom Teeth Are Becoming Obsolete</h3>
+                    <p>As our diets shifted to softer foods and our jaws became smaller, many people stopped developing wisdom teeth altogether. About 35% of people are born without some or all of them - an example of recent human evolution in action.</p>
+                </div>
+   
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Human Evolution Education Project | Designed for curious minds</p>
+    </footer>
+</body>
+</html>

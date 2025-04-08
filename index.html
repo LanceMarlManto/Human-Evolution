@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey of Humanity: Evolution</title>
+    <style>
+        :root {
+            --primary: #8B4513;  /* SaddleBrown - earthy tone */
+            --secondary: #D2B48C; /* Tan */
+            --accent: #5F9EA0;   /* CadetBlue */
+            --light: #F5F5DC;   /* Beige */
+            --dark: #2F4F4F;     /* DarkSlateGray */
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: #333;
+            background-image: url('https://images.unsplash.com/photo-1617791160536-598cf32026fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            background-color: rgba(245, 245, 220, 0.9);
+        }
+        
+        header {
+            background: linear-gradient(to right, var(--dark), var(--primary));
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            background-color: var(--primary);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-buttons a {
+            background-color: var(--secondary);
+            color: var(--dark);
+            border: none;
+            padding: 0.8rem 1.8rem;
+            margin: 0 0.8rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-decoration: none;
+        }
+        
+        .nav-buttons a:hover {
+            background-color: var(--accent);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .nav-buttons a.active {
+            background-color: var(--accent);
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        
+        .intro {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 3rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--primary);
+        }
+        
+        .topic-previews {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .topic-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .topic-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .topic-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--secondary);
+        }
+        
+        .topic-content {
+            padding: 1.5rem;
+        }
+        
+        .topic-content h3 {
+            color: var(--primary);
+            margin-top: 0;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+        }
+        
+        footer {
+            background: linear-gradient(to right, var(--dark), var(--primary));
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-buttons {
+                flex-wrap: wrap;
+            }
+            
+            .nav-buttons a {
+                margin: 0.5rem;
+                padding: 0.6rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Journey of Humanity: The Story of Evolution</h1>
+        <p>Exploring our ancestral path from ancient primates to modern humans</p>
+    </header>
+    
+    <div class="nav-buttons">
+        <a href="index.html" class="active">Home</a>
+        <a href="fun.html">Fun Facts</a>
+        <a href="key.html">Key Stages</a>
+        <a href="theories.html">Theories & Debates</a>
+        <a href="about.html">About</a>
+    </div>
+    
+    <div class="container">
+        <section id="home">
+            <div class="intro">
+                <h2>Understanding Our Origins</h2>
+                <p>Human evolution is the lengthy process of change by which people originated from apelike ancestors. Scientific evidence shows that the physical and behavioral traits shared by all people originated from apelike ancestors and evolved over a period of approximately six million years.</p>
+                
+                <p>Our evolutionary journey includes the development of bipedalism, increased brain size, reduced sexual dimorphism, prolonged juvenile development, and increased social complexity. The study of human evolution involves several scientific disciplines, including physical anthropology, primatology, archaeology, linguistics, and genetics.</p>
+                
+                <p>Explore the sections below to learn more about fascinating aspects of our evolutionary history.</p>
+            </div>
+            
+            <div class="topic-previews">
+                <div class="topic-card">
+                    <img src="https://media.istockphoto.com/id/1536982508/vector/fun-fact-icon-concept-did-you-know-with-light-bulb-and-smiley-trendy-modern-logo-design.jpg?s=612x612&w=0&k=20&c=IQylrQpAvDOADxXFfMjzt4VMXWKzimVVmtHb1ePPn4E=" alt="Ancient human skull" class="topic-img">
+                    <div class="topic-content">
+                        <h3>Fun Facts</h3>
+                        <p>Discover surprising and little-known facts about human evolution. Did you know we share 98.8% of our DNA with chimpanzees? Or that early humans nearly went extinct?</p>
+                    </div>
+                </div>
+                
+                <div class="topic-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMpZIGZKn70LBqHzLzEhE4tau2ZYlqpfAjUA&s" alt="Evolution timeline" class="topic-img">
+                    <div class="topic-content">
+                        <h3>Key Stages</h3>
+                        <p>Explore the major milestones in human evolution from our earliest ancestors like Sahelanthropus to the emergence of Homo sapiens. Learn about the development of tools, language, and culture.</p>
+                    </div>
+                </div>
+                
+                <div class="topic-card">
+                    <img src="https://static.scientificamerican.com/sciam/cache/file/BC4D638C-BE8C-4970-9E2783E57DD4A8C6_source.jpg?crop=16%3A9%2Csmart&w=1920" alt="Scientists discussing" class="topic-img">
+                    <div class="topic-content">
+                        <h3>Theories & Debates</h3>
+                        <p>Dive into the ongoing scientific discussions about human evolution. From the "Out of Africa" theory to multiregional evolution, understand the different perspectives shaping our understanding.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Human Evolution Education Project | Designed for curious minds</p>
+    </footer>
+</body>
+</html>
